@@ -1,0 +1,21 @@
+{
+  "name": "qiniu-encrypt",
+  "version": "1.0.0",
+  "description": "为七牛云操作提供加密支持",
+  "main": "lib/",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "qiniu", "encrypt", "qiniu-encrypt", "node-qiniu", "node-qiniu-sdk"
+  ],
+  "author": "sungg12138",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SunGg12138/qiniu-encrypt/issues"
+  },
+  "homepage": "https://github.com/SunGg12138/qiniu-encrypt#readme"
+}
