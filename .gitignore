@@ -4,3 +4,5 @@ package-lock.json
 
 # 忽略AccessKey和SecretKey的配置文件
 test/resource/qiniu.config.json
+# 忽略测试文件
+test/resource/download.test.js
