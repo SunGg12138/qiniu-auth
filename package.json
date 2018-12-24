@@ -24,6 +24,7 @@
   "homepage": "https://github.com/SunGg12138/qiniu-auth#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "debug": "^4.1.1",
     "node-request-slim": "^1.0.5"
   }
 }
