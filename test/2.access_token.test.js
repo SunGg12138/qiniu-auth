@@ -51,20 +51,20 @@ describe('2. access_token（管理凭证）相关测试', function(){
     expect(result.error).to.be.undefined;
     expect(result).to.be.an('array');
   });
-  it('有path和form参数时，获取管理凭证', async function(){
+  it('有path和body参数时，获取管理凭证', async function(){
     // 设置path和query
     let path = '/private';
-    let form = {
+    let body = {
       bucket: bucketName,
       private: 1
     };
     // 获取授权
-    let auth = qiniu_auth.access_token.call(qiniu_config, { path, form });
+    let auth = qiniu_auth.access_token.call(qiniu_config, { path, body });
     // 设置 Bucket 访问权限
     let result = await rp({
       url: 'http://uc.qbox.me' + path,
       method: 'POST',
-      form: form,
+      form: body,
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Authorization': auth
