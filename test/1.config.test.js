@@ -12,7 +12,7 @@ try {
 const expect = require('chai').expect;
 const qiniu_config = require('./resource/qiniu.config');
 const rp = require('node-request-slim').promise;
-const qiniu_auth = require('../lib');
+const qiniu_auth = require('../');
 
 describe('测试环境', function(){
   it('qiniu.config.json', function(){

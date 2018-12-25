@@ -1,5 +1,5 @@
 const fs = require('fs');
-const qiniu_auth = require('../../lib/');
+const qiniu_auth = require('../../');
 const rp = require('node-request-slim').promise;
 
 /**

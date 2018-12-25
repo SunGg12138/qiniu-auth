@@ -13,7 +13,7 @@ const fs = require('fs');
 const expect = require('chai').expect;
 const rp = require('node-request-slim').promise;
 const qiniu_config = require('./resource/qiniu.config');
-const qiniu_auth = require('../lib');
+const qiniu_auth = require('../');
 const debug = require('debug')('test');
 const common = require('./common');
 

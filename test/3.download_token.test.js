@@ -14,7 +14,7 @@ const expect = require('chai').expect;
 const rp = require('node-request-slim').promise;
 const qiniu_config = require('./resource/qiniu.config');
 const common = require('./common');
-const qiniu_auth = require('../lib');
+const qiniu_auth = require('../');
 
 describe('3. download_token（下载凭证）相关测试', function(){
   this.timeout(20000);

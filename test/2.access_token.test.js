@@ -13,7 +13,7 @@ const expect = require('chai').expect;
 const rp = require('node-request-slim').promise;
 const qiniu_config = require('./resource/qiniu.config');
 const common = require('./common');
-const qiniu_auth = require('../lib');
+const qiniu_auth = require('../');
 
 describe('2. access_token（管理凭证）相关测试', function(){
   before(async () => {
