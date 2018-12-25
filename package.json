@@ -1,6 +1,6 @@
 {
   "name": "qiniu-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "为七牛云操作提供加密支持",
   "main": "lib/",
   "directories": {
