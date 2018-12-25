@@ -8,6 +8,12 @@
 - [Pandora API 签名](https://developer.qiniu.com/insight/api/4814/the-api-signature)
 - [HTTP 请求鉴权](https://developer.qiniu.com/pili/api/2772/http-requests-authentication)
 
+还有以下工具：
+
+- [EncodedEntryURI](https://developer.qiniu.com/kodo/api/1276/data-format)
+- [HMAC-SHA1签名](https://developer.qiniu.com/linking/glossary/5287/linking-hmac-sha1)
+- [URL安全的Base64编码](https://developer.qiniu.com/kodo/manual/1231/appendix#urlsafe-base64)
+
 ## 测试
 
 ```bash
