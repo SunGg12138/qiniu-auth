@@ -2,6 +2,9 @@ const fs = require('fs');
 const qiniu_auth = require('../../lib/');
 const rp = require('node-request-slim').promise;
 
+/**
+ * 创建储存桶
+ */
 exports.createBucket =
 async function createBucket(name, ak_sk, zone = 'z0'){
   let path = `/mkbucketv2/${qiniu_auth.encodedEntryURI(name)}/region/${zone}`;
@@ -18,6 +21,9 @@ async function createBucket(name, ak_sk, zone = 'z0'){
   if (result.error) return Promise.reject(result);
 }
 
+/**
+ * 删除储存桶
+ */
 exports.delBucket =
 async function delBucket(name, ak_sk){
   let path = `/drop/${name}`;
@@ -33,8 +39,11 @@ async function delBucket(name, ak_sk){
   if (result.error) return Promise.reject(result);
 }
 
+/**
+ * 上传文件
+ */
 exports.uploadFile = 
-async function uploadFile(path, bucketName, fileName, ak_sk, private){
+async function uploadFile(path, bucketName, fileName, ak_sk){
   let auth = qiniu_auth.upload_token.call(ak_sk, { scope: bucketName + ':' + fileName, returnBody: '{"name": $(fname) }' });
   let request_options = {
     method: 'POST',
@@ -49,6 +58,9 @@ async function uploadFile(path, bucketName, fileName, ak_sk, private){
   if (result.error) return Promise.reject(result);
 }
 
+/**
+ * 储存桶私有化
+ */
 exports.private =
 async function private(bucketName, ak_sk){
   let form = {
@@ -70,6 +82,9 @@ async function private(bucketName, ak_sk){
   if (result.error) return Promise.reject(result);
 }
 
+/**
+ * 获取储存桶域名
+ */
 exports.domain =
 async function domain(bucketName, ak_sk){
   // 设置path和query
