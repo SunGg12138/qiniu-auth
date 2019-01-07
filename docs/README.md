@@ -3,7 +3,7 @@
 - [access_token 管理凭证](#管理凭证)
 - [upload_token 上传凭证](#上传凭证)
 - [download_token 下载凭证](#下载凭证)
-- [Pandora API签名](#PandoraAPI签名)
+- [Pandora API签名](#Pandora-API签名)
 - [qiniu_token HTTP请求鉴权](#HTTP请求鉴权)
 - [EncodedEntryURI](#EncodedEntryURI)
 - [HMAC-SHA1签名](#HMAC-SHA1签名)
@@ -85,7 +85,7 @@ let realUrl = qiniu_auth.download_token({ AccessKey: '<Your AccessKey>', SecretK
 // realUrl: http://xxx/test.js?e=1545723182&token=<Your AccessKey>:e9agnim21L6o7EUaC7sCDXtz3VA=
 ```
 
-### Pandora API签名
+### Pandora-API签名
 
 qiniu_auth.pandora(options); 默认使用token签名
 qiniu_auth.pandora.AK_SK(options); 也可以使用AK_SK签名
