@@ -18,7 +18,7 @@ qiniu_auth.access_token(options);
 options有5个参数属性：
   - path，string，必选，请求的路径
   - query，string || object，可选，请求的参数，如果object类型会进行qs.stringify
-  - body，string || object，可选，HTTP Body，如果object类型会进行qs.stringify，当 Content-Type 为 application/x-www-form-urlencoded 时，签名内容必须包括请求内容
+  - form，string || object，可选，HTTP Body，如果object类型会进行qs.stringify，当 Content-Type 为 application/x-www-form-urlencoded 时，签名内容必须包括请求内容
   - AccessKey，string，可选，指定的七牛云AccessKey参数，和this.AccessKey参数二选一，options.AccessKey优先级高
   - SecretKey，string，可选，指定的七牛云SecretKey参数，和this.SecretKey参数二选一，options.SecretKey优先级高
 

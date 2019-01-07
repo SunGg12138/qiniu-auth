@@ -63,17 +63,17 @@ async function uploadFile(path, bucketName, fileName, ak_sk){
  */
 exports.private =
 async function private(bucketName, ak_sk){
-  let body = {
+  let form = {
     bucket: bucketName,
     private: 1
   };
   // 获取授权
-  let auth = qiniu_auth.access_token.call(ak_sk, { path: '/private', body });
+  let auth = qiniu_auth.access_token.call(ak_sk, { path: '/private', form });
   // 设置 Bucket 访问权限
   let result = await rp({
     url: 'http://uc.qbox.me/private',
     method: 'POST',
-    form: body,
+    form: form,
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
       'Authorization': auth
