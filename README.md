@@ -32,7 +32,7 @@ $ DEBUG=test mocha
 
 ## 已使用qiniu-auth加密的模块
 
-<img src="https://avatars0.githubusercontent.com/u/16427275?s=40&v=4" style="border-radius: 50%; vertical-align: middle;" /> [node-qiniu-sdk](https://github.com/SunGg12138/node-qiniu-sdk)
+[node-qiniu-sdk](https://github.com/SunGg12138/node-qiniu-sdk)
 
 ## LICENSE
 
